@@ -52,6 +52,9 @@ class Viewpoint::SPWS::Websvc::Versions
     versions
   end
 
+  def get_url(url)
+    @spcon.get(url)
+  end
 
   private
 
