@@ -63,5 +63,8 @@ require 'viewpoint/spws/types/user'
 # Document versions
 require 'viewpoint/spws/websvc/versions'
 require 'viewpoint/spws/types/version'
+# Document permissions
+require 'viewpoint/spws/websvc/permissions'
+require 'viewpoint/spws/types/permission'
 
 require 'viewpoint/spws/spws_client'

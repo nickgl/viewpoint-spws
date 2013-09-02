@@ -48,6 +48,10 @@ class Viewpoint::SPWSClient
     @versionsws ||= Websvc::Versions.new(@con)
   end
 
+  def permissions_ws
+    @permissionsws ||= Websvc::Permissions.new(@con)
+  end
+
 
   # ========= List Accessor Proxy Methods ========= 
 
@@ -118,4 +122,14 @@ class Viewpoint::SPWSClient
   def get_versions(document)
     versions_ws.get_versions document
   end
+
+
+  # ========= Permissions Accessor Proxy Methods ========= 
+
+  # Retrieve the permissions for a document
+  # @param [String] The document ref
+  def get_permissions(document)
+    permissions_ws.get_permissions document
+  end
+
 end
